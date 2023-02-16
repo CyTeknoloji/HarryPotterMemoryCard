@@ -16,6 +16,9 @@ import com.caneryildirim.harypottermemorycard.databinding.FragmentTekliKolayBind
 import com.caneryildirim.harypottermemorycard.util.Kart
 import com.caneryildirim.harypottermemorycard.util.MemoryCard
 import com.caneryildirim.harypottermemorycard.util.Singleton.kartList
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 
 
 class TekliKolayFragment : Fragment() {
@@ -31,7 +34,6 @@ class TekliKolayFragment : Fragment() {
     private var countMatch:Int=0                        //kaç eşmeşme olduğunu sayar
     private var kalanSure:Long=45                       //kalan süre değişkeni
     private var puan:Double=0.0                         //puan değişkeni
-    
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

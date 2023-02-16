@@ -11,6 +11,11 @@ import com.caneryildirim.harypottermemorycard.R
 import com.caneryildirim.harypottermemorycard.databinding.FragmentSecimEkranBinding
 import com.caneryildirim.harypottermemorycard.util.Kart
 import com.caneryildirim.harypottermemorycard.util.Singleton.kartList
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 
 
 class SecimEkranFragment : Fragment() {
@@ -18,6 +23,7 @@ class SecimEkranFragment : Fragment() {
     private val binding get() = _binding!!
     private var oyuncuModu: String? = null
     private var oyuncuSeviye: String? = null
+    private var reklamInfo=false
 
 
 
@@ -39,6 +45,9 @@ class SecimEkranFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        if (!reklamInfo){
+            admob()
+        }
         veriAl()
 
         //butonların işlevleri
@@ -119,12 +128,31 @@ class SecimEkranFragment : Fragment() {
                 //oyun modu ve seviyeden birisi seçilmediği zaman
                 Toast.makeText(
                     this.requireContext(),
-                    "Oyun modunu ve seviyesini seçin!",
+                    "Choose game mode and level!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
         }
 
+
+    }
+
+    private fun admob() {
+        var mInterstitialAd: InterstitialAd? = null
+        MobileAds.initialize(requireContext()) {}
+
+        val adRequest = AdRequest.Builder().build()
+        InterstitialAd.load(requireContext(),"ca-app-pub-8642310051732821/5485117589", adRequest, object : InterstitialAdLoadCallback() {
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                mInterstitialAd = null
+            }
+
+            override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                mInterstitialAd = interstitialAd
+                mInterstitialAd?.show(requireActivity())
+                reklamInfo=true
+            }
+        })
 
     }
 

@@ -15,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HarryPotterMemoryMaster"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8642310051732821~5394166985"/>
+
         <activity
             android:name="com.caneryildirim.harypottermemorycard.view.MainActivity2"
             android:exported="true">

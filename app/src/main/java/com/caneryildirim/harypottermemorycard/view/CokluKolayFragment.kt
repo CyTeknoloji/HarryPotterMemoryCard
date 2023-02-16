@@ -16,7 +16,8 @@ import com.caneryildirim.harypottermemorycard.databinding.FragmentCokluKolayBind
 import com.caneryildirim.harypottermemorycard.util.Kart
 import com.caneryildirim.harypottermemorycard.util.MemoryCard
 import com.caneryildirim.harypottermemorycard.util.Singleton
-
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 
 
 class CokluKolayFragment : Fragment() {

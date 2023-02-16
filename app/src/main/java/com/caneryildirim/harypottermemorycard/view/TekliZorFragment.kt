@@ -16,7 +16,8 @@ import com.caneryildirim.harypottermemorycard.databinding.FragmentTekliZorBindin
 import com.caneryildirim.harypottermemorycard.util.Kart
 import com.caneryildirim.harypottermemorycard.util.MemoryCard
 import com.caneryildirim.harypottermemorycard.util.Singleton
-
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 
 
 class TekliZorFragment : Fragment() {
@@ -59,6 +60,7 @@ class TekliZorFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         muzikCalar()        //müziğin sesini kapatıp açma fonksiyonu
         kartDagitim()       //firebase den gelen listeyi imageView lara dağıtma fonksiyonu

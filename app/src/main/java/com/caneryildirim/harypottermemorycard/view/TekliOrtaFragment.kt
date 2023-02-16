@@ -16,8 +16,8 @@ import com.caneryildirim.harypottermemorycard.databinding.FragmentTekliOrtaBindi
 import com.caneryildirim.harypottermemorycard.util.Kart
 import com.caneryildirim.harypottermemorycard.util.MemoryCard
 import com.caneryildirim.harypottermemorycard.util.Singleton.kartList
-
-
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 
 
 class TekliOrtaFragment : Fragment() {
@@ -60,6 +60,7 @@ class TekliOrtaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         muzikCalar()        //müziğin sesini kapatıp açma fonksiyonu
         kartDagitim()       //firebase den gelen listeyi imageView lara dağıtma fonksiyonu

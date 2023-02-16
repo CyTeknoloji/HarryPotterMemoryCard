@@ -7,6 +7,7 @@
     tools:context=".view.TekliKolayFragment">
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,8 +23,7 @@
             android:layout_row="0"
             android:layout_column="0"
             android:layout_margin="10dp"
-            android:src="@drawable/kartarka"
-             />
+            android:src="@drawable/kartarka" />
 
         <ImageView
             android:id="@+id/imageKart3"
@@ -93,5 +93,7 @@
         app:layout_constraintEnd_toStartOf="@+id/music"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
