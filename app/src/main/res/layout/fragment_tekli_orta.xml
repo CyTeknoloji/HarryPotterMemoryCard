@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TekliOrtaFragment">
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/musicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPuan1">
+
+        <ImageView
+            android:id="@+id/imageKart1TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart2TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart3TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart4KO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart5TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart12TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart13TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart14TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+            />
+
+        <ImageView
+            android:id="@+id/imageKart15TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+            />
+
+        <ImageView
+            android:id="@+id/imageKart16TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+            />
+
+        <ImageView
+            android:id="@+id/imageKart10TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart11TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart9TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+        <ImageView
+            android:id="@+id/imageKart6TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+            />
+
+        <ImageView
+            android:id="@+id/imageKart7TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+            />
+
+        <ImageView
+            android:id="@+id/imageKart8TO"
+            android:layout_width="91dp"
+            android:layout_height="102dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="2dp"
+            android:src="@drawable/kartarka"
+             />
+
+
+    </GridLayout>
+
+
+    <TextView
+        android:id="@+id/textPuan1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Score:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/music"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSureTO" />
+
+    <TextView
+        android:id="@+id/textViewSureTO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="Time: 45"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/music"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

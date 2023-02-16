@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "332642907795",
+    "project_id": "hary-potter-memory-master",
+    "storage_bucket": "hary-potter-memory-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332642907795:android:943d88782a08adf0003f66",
+        "android_client_info": {
+          "package_name": "com.harypotter.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332642907795-th7oinfspkag05infqv50fm2pq6quli5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN1qrI_d0mr5sdUCgBGCP8K1atW8t4S70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332642907795-th7oinfspkag05infqv50fm2pq6quli5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

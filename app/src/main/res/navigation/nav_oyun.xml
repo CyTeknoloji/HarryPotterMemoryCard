@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_oyun"
+    app:startDestination="@id/secimEkranFragment">
+
+    <fragment
+        android:id="@+id/secimEkranFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.SecimEkranFragment"
+        android:label="fragment_secim_ekran"
+        tools:layout="@layout/fragment_secim_ekran" >
+        <action
+            android:id="@+id/action_secimEkranFragment_to_tekliKolayFragment"
+            app:destination="@id/tekliKolayFragment" />
+        <action
+            android:id="@+id/action_secimEkranFragment_to_tekliOrtaFragment"
+            app:destination="@id/tekliOrtaFragment" />
+        <action
+            android:id="@+id/action_secimEkranFragment_to_tekliZorFragment"
+            app:destination="@id/tekliZorFragment" />
+        <action
+            android:id="@+id/action_secimEkranFragment_to_cokluKolayFragment"
+            app:destination="@id/cokluKolayFragment" />
+        <action
+            android:id="@+id/action_secimEkranFragment_to_cokluOrtaFragment"
+            app:destination="@id/cokluOrtaFragment" />
+        <action
+            android:id="@+id/action_secimEkranFragment_to_cokluZorFragment"
+            app:destination="@id/cokluZorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tekliKolayFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.TekliKolayFragment"
+        android:label="fragment_tekli_kolay"
+        tools:layout="@layout/fragment_tekli_kolay" >
+        <action
+            android:id="@+id/action_tekliKolayFragment_to_secimEkranFragment"
+            app:destination="@id/secimEkranFragment"
+            app:popUpTo="@id/tekliKolayFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/tekliOrtaFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.TekliOrtaFragment"
+        android:label="fragment_tekli_orta"
+        tools:layout="@layout/fragment_tekli_orta" >
+        <action
+            android:id="@+id/action_tekliOrtaFragment_to_secimEkranFragment"
+            app:destination="@id/secimEkranFragment"
+            app:popUpTo="@id/tekliOrtaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/tekliZorFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.TekliZorFragment"
+        android:label="fragment_tekli_zor"
+        tools:layout="@layout/fragment_tekli_zor" >
+        <action
+            android:id="@+id/action_tekliZorFragment_to_secimEkranFragment"
+            app:destination="@id/secimEkranFragment"
+            app:popUpTo="@id/tekliZorFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cokluKolayFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.CokluKolayFragment"
+        android:label="fragment_coklu_kolay"
+        tools:layout="@layout/fragment_coklu_kolay" >
+        <action
+            android:id="@+id/action_cokluKolayFragment_to_secimEkranFragment"
+            app:destination="@id/secimEkranFragment"
+            app:popUpTo="@id/cokluKolayFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cokluOrtaFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.CokluOrtaFragment"
+        android:label="fragment_coklu_orta"
+        tools:layout="@layout/fragment_coklu_orta" >
+        <action
+            android:id="@+id/action_cokluOrtaFragment_to_secimEkranFragment"
+            app:destination="@id/secimEkranFragment"
+            app:popUpTo="@id/cokluOrtaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cokluZorFragment"
+        android:name="com.caneryildirim.harypottermemorycard.view.CokluZorFragment"
+        android:label="fragment_coklu_zor"
+        tools:layout="@layout/fragment_coklu_zor" >
+        <action
+            android:id="@+id/action_cokluZorFragment_to_secimEkranFragment"
+            app:destination="@id/secimEkranFragment"
+            app:popUpTo="@id/cokluZorFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
